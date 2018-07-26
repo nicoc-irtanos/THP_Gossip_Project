@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_26_225217) do
+ActiveRecord::Schema.define(version: 2018_07_26_231531) do
 
   create_table "cities", force: :cascade do |t|
     t.string "name"
@@ -42,6 +42,13 @@ ActiveRecord::Schema.define(version: 2018_07_26_225217) do
     t.index ["comment_id"], name: "index_likes_on_comment_id"
     t.index ["gossip_id"], name: "index_likes_on_gossip_id"
     t.index ["user_id"], name: "index_likes_on_user_id"
+  end
+
+  create_table "private_messages", force: :cascade do |t|
+    t.text "content"
+    t.datetime "date"
+    t.integer "recipient_id"
+    t.integer "sender_id"
   end
 
   create_table "tags", force: :cascade do |t|
