@@ -1,24 +1,25 @@
-# README
+# Gossips
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Prerequisites
 
-Things you may want to cover:
+Ruby Version : 2.5.1
 
-* Ruby version
+Rails Version : 5.2.0
 
-* System dependencies
+With ```git clone``` clone this repository on your local machine
 
-* Configuration
+Go in the directory and run ```bundle install```
 
-* Database creation
+Run ```rails db:migrate``` to get all necessary updates
 
-* Database initialization
+Run ```rails db:seed``` to get the default database
 
-* How to run the test suite
+##Informations
 
-* Services (job queues, cache servers, search engines, etc.)
+Go in the ```db/migrate``` directory to understand all update that have/must be carried out
 
-* Deployment instructions
+In the ```db``` directory, check ```schema.rb``` to understand the database's structure and relations
 
-* ...
+In the same folder, check  ```seeds.rb``` to understand what the default database is
+
+Models are in the ```app/models``` directory
